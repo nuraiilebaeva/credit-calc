@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кредитный калькулятор</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-2">
+      <div class="row col col-lg-6 col-12">
+        <h1>Кредитный калькулятор</h1>
+      </div>
+      <div class="row flex-column col col-lg-6 col-12">
+        <h5><b>Выполнила:</b> Илебаева Нурай</h5>
+        <h5><b>Проверила:</b> Джундубаев Азим</h5>
+      </div>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-money" aria-hidden="true"></i></span>
+      <input type="text" id="summ" class="form-control" placeholder="Сумма займа">
+    </div>
+    <div class="space-10"></div>
+    <div class="input-group">
+      <span class="input-group-addon"></span>
+      <input type="text" id="percent" class="form-control" placeholder="Годовой процент">
+    </div>
+    <div class="space-10"></div>
+    <div class="input-group mb-3">
+      <select class="custom-select w-100 p-2" id="inputGroupSelect02">
+        <option value="" selected>Выберите срок займа...</option>
+        <option value="12">12</option>
+        <option value="24">24</option>
+        <option value="36">36</option>
+      </select>
+    </div>
+    <div class="space-10"></div>
+    <button id="get" class="btn btn-success">Выполнить</button>
+    <button id="clear" class="btn btn-danger">Очистить</button>
+    <div class="space-10"></div>
+
+    <div id="firstMessage"></div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Месяц:</th>
+          <th scope="col">Оплата за месяц:</th>
+          <th scope="col">процент за месяц:</th>
+        </tr>
+      </thead>
+      <tbody id="itog">
+
+      </tbody>
+    </table>
+    
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
